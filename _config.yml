@@ -1,0 +1,12 @@
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+title: Morula
+url: https://morula.net
+canonical_url: https://morula.net
+description: Morula
+logo: assets/img/lego.gif
+host: 0.0.0.0
