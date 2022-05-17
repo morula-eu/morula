@@ -1,30 +1,71 @@
-<!--
-                                                  888          
-                                                  888          
-                                                  888          
-88888b.   .d88b.        .d88b.   .d88b.   8888b.  888 .d8888b  
-888 "88b d88""88b      d88P"88b d88""88b     "88b 888 88K      
-888  888 888  888      888  888 888  888 .d888888 888 "Y8888b. 
-888  888 Y88..88P      Y88b 888 Y88..88P 888  888 888      X88 
-888  888  "Y88P"        "Y88888  "Y88P"  "Y888888 888  88888P' 
-                            888                                
-                       Y8b d88P                                
-                        "Y88P"                                  
--->
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ page.title }}</title>
+<meta name="robots" content="index, follow">
+<title>{{ site.title | append: ' – ' }}{{ site.tagline }}</title>
 <link rel="stylesheet" href="{{ site.url }}/assets/css/morula.css">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/assets/fonts/subset-LeagueGothicSemiCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<!-- favicons -->
+<link rel="icon" href="{{ site.url }}/favicon.ico" sizes="any">
+<link rel="icon" href="{{ site.url }}/assets/img/favicons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/assets/img/favicons/apple-touch-icon.png">
+<link rel="manifest" href="{{ site.url }}/site.webmanifest">
+<!-- SEO -->
+<link rel="canonical" href="{{ page.url |  replace:'index.html','' | absolute_url }}">
+<meta name="description" content="{{ site.description }}">
+<!-- Open graph -->
+<meta property="og:title" content="{{ site.title | append: ' – ' }}{{ site.tagline }}" />
+<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:description" content="{{ site.description }}" />
+<meta property="og:image" content="{{ site.opengraph.url | prepend: site.url }}" />
+<!-- LinkedIn -->
+<meta prefix="og: https://ogp.me/ns#" property="og:title" content="{{ site.title }}" />
+<meta prefix="og: https://ogp.me/ns#" property="og:type" content="website" />
+<meta prefix="og: https://ogp.me/ns#" property="og:description" content="{{ site.description }}" />
+<meta prefix="og: https://ogp.me/ns#" property="og:image" content="{{ site.opengraph.url | prepend: site.url }}" />
+<meta prefix="og: https://ogp.me/ns#" property="og:url" content="{{ page.url | prepend: site.url }}" />
+<!-- Twitter integration -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ site.title }}" />
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+<meta name="twitter:description" content="{{ site.description }}" />
+<meta name="twitter:image" content="{{ site.opengraph.url | prepend: site.url }}" />
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.title }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Milan, France",
+    "postalCode": "20132",
+  },
+  "logo": "{{ site.opengraph.url | prepend: site.url }}",
+  "headline": "{{ site.title | append: ' – ' }}{{ site.tagline }}",
+  "email": "hello(at)morula.net",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ site.description }}",
+  "keywords": "{{ site.keywords }}",
+  "datePublished": "{{ page.date }}",
+  "dateModified": "{{ page.last_modified_at }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "width": "1200",
+    "height": "628",
+    "url": "{{ site.opengraph.url | prepend: site.url }}"
+  }
+}
+</script>
 </head>
 <body>
 <main>
