@@ -1,4 +1,4 @@
-/.jekyll-cache/
-/_site/
-/build/
+.jekyll-cache/
 .jekyll-metadata
+node_modules/
+_site/
