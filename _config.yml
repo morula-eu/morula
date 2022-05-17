@@ -1,12 +1,41 @@
+host: "localhost"
+url: "https://morula.net"
+canonical_url: "https://morula.net"
+lang: "en-US"
+title: "Morula"
+description: "A small web design agency focused on sustainability and accessibility. With 20 years of experience, we offer design, development, audio and video services."
+tagline: "Web design agency"
+pitch: Morula is where creativity and technical skills meet. We are a small web design agency focused on sustainability and accessibility. Morula is <a href="https://silviamaggidesign.com" title="Visit Silvia Maggi Design website">Silvia Maggi</a> and <a href="https://minutestomidnight.co.uk" title="Visit Minutes to Midnight website">Simone Silvestroni</a>. With 20 years of experience working together, we offer services that span across design, development, audio and video.
+logo: 
+  url: "/assets/img/morula-logo-2022.svg"
+  alt: "Morula rounded avatar containing the vector silhouettes of Silvia Maggi and Simone Silvestroni"
+  width: 180px
+  height: 180px
+opengraph:
+  url: "/assets/img/morula-og.jpg"
+
+# -------------------
+# SEO
+# -------------------
+timezone: Europe/Rome
+keywords:
+  silvia maggi,
+  simone silvestroni,
+  web design,
+  web development,
+  sound design,
+  front-end,
+  ux,
+  user experience,
+  jekyll,
+  wordpress,
+  jamstack,
+  html,
+  css,
+  video
+
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
-
-title: Morula
-url: https://morula.net
-canonical_url: https://morula.net
-description: Morula
-logo: assets/img/lego.gif
-host: 0.0.0.0
