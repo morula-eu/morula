@@ -3,21 +3,19 @@ layout: default
 date: 2022-05-17 18:27:36
 last_modified_at: 2022-05-17 18:27:43
 ---
-<main>
-  <header>
-    <h1>{{ site.title }}</h1>
-  </header>
-  <div class="morula-logo outer-circle">
-    <div class="inner-circle">
-      <img src="{{ site.logo.url }}" alt="{{ site.logo.alt }}" width="{{ site.logo.width }}" height="{{ site.logo.height }}">
-    </div>
-    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+<header>
+  <h1>{{ site.title }}</h1>
+</header>
+<div class="morula-logo outer-circle">
+  <div class="inner-circle">
+    <img src="{{ site.logo.url }}" alt="{{ site.logo.alt }}" width="{{ site.logo.width }}" height="{{ site.logo.height }}">
   </div>
-  <div class="morula-pitch">
-    <p>{{ site.pitch }}</p>
-    <p class="text-center">✍️ <a href="mailto:hello@morula.net" title="Send us an email">Get in touch</a></p>
-  </div>
-  <footer>
-    <p class="morula-small">&copy; {{ site.time | date: '%Y' }} {{ site.title }} 🇪🇺</p>
-  </footer>
-</main>
+  <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+</div>
+<div class="morula-pitch">
+  <p>{{ site.pitch }}</p>
+  <p class="text-center">✍️ <a href="mailto:hello@morula.net" title="Send us an email">Get in touch</a></p>
+</div>
+<footer>
+  <p class="morula-small">&copy; {{ site.time | date: '%Y' }} {{ site.title }} 🇪🇺</p>
+</footer>

@@ -9,8 +9,8 @@ pitch: Morula is where creativity and technical skills meet. We are a small web 
 logo: 
   url: "/assets/img/morula-logo-2022.svg"
   alt: "Morula rounded avatar containing the vector silhouettes of Silvia Maggi and Simone Silvestroni"
-  width: 180px
-  height: 180px
+  width: 180
+  height: 180
 opengraph:
   url: "/assets/img/morula-og.jpg"
 
