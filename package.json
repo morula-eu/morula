@@ -6,10 +6,9 @@
     "post": "bundle exec jekyll serve --livereload",
     "draft": "bundle exec jekyll serve --drafts --livereload",
     "future": "bundle exec jekyll serve --drafts --future --livereload",
-    "css": "npm-run-all css-compile css-purge css-prefix css-minify",
-    "css-compile": "sass --style expanded --embed-sources --no-error-css sass/:assets/css/",
-    "css-purge": "purgecss --css \"assets/css/m2m.css\" --content \"_site/**/*.html\" --safelist active --output \"assets/css\"",
-    "css-prefix": "npx postcss \"assets/css/m2m.css\" --use autoprefixer -d assets/css/",
+    "css": "npm-run-all css-purge css-prefix css-minify",
+    "css-purge": "purgecss --css \"assets/css/morula.css\" --content \"_site/**/*.html\" --safelist active --output \"assets/css\"",
+    "css-prefix": "npx postcss \"assets/css/morula.css\" --use autoprefixer -d assets/css/",
     "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map-inline-sources --output assets/css/ --batch --batch-suffix \".min\" \"assets/css/*.css\" \"!assets/css/*.min.css\""
   },
   "devDependencies": {
