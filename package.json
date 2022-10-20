@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/minutes2midnight/morula.git"
+    "url": "git+https://gitlab.com/simonesilvestroni/morula.git"
   },
   "keywords": [
     "webdesign",
@@ -32,7 +32,7 @@
   "author": "Simone Silvestroni and Silvia Maggi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/minutes2midnight/morula/issues"
+    "url": "https://gitlab.com/simonesilvestroni/morula/issues"
   },
-  "homepage": "https://morula.net"
+  "homepage": "https://morula.eu"
 }
