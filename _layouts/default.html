@@ -1,79 +1,73 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index, follow">
-<title>{{ site.title | append: ' – ' }}{{ site.tagline }}</title>
-{% if jekyll.environment == "production" -%}
-<link rel="stylesheet" href="{{ site.url }}/assets/css/morula.min.css">
-{% else -%}
-<link rel="stylesheet" href="{{ site.url }}/assets/css/morula.css">
-{%- endif -%}
-<link rel="preload" href="/assets/fonts/subset-LeagueGothicSemiCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<!-- favicons -->
-<link rel="icon" href="{{ site.url }}/favicon.ico" sizes="any">
-<link rel="icon" href="{{ site.url }}/assets/img/favicons/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/assets/img/favicons/apple-touch-icon.png">
-<link rel="manifest" href="{{ site.url }}/site.webmanifest">
-<!-- SEO -->
-<link rel="canonical" href="{{ page.url |  replace:'index.html','' | absolute_url }}">
-<meta name="description" content="{{ site.description }}">
-<!-- Open graph -->
-<meta property="og:title" content="{{ site.title | append: ' – ' }}{{ site.tagline }}" />
-<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:description" content="{{ site.description }}" />
-<meta property="og:image" content="{{ site.opengraph.url | prepend: site.url }}" />
-<!-- LinkedIn -->
-<meta prefix="og: https://ogp.me/ns#" property="og:title" content="{{ site.title }}" />
-<meta prefix="og: https://ogp.me/ns#" property="og:type" content="website" />
-<meta prefix="og: https://ogp.me/ns#" property="og:description" content="{{ site.description }}" />
-<meta prefix="og: https://ogp.me/ns#" property="og:image" content="{{ site.opengraph.url | prepend: site.url }}" />
-<meta prefix="og: https://ogp.me/ns#" property="og:url" content="{{ page.url | prepend: site.url }}" />
-<!-- Twitter integration -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ site.title }}" />
-<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
-<meta name="twitter:description" content="{{ site.description }}" />
-<meta name="twitter:image" content="{{ site.opengraph.url | prepend: site.url }}" />
-<!-- Schema -->
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "name": "{{ site.title }}",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Milan, Italy",
-    "postalCode": "20132",
-  },
-  "logo": "{{ site.opengraph.url | prepend: site.url }}",
-  "headline": "{{ site.title | append: ' – ' }}{{ site.tagline }}",
-  "email": "hello(at)morula.eu",
-  "url": "{{ site.url }}{{ page.url }}",
-  "description": "{{ site.description }}",
-  "keywords": "{{ site.keywords }}",
-  "datePublished": "{{ page.date }}",
-  "dateModified": "{{ page.last_modified_at }}",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ site.url }}{{ page.url }}"
-  },
-  "image": {
-    "@type": "ImageObject",
-    "width": "1200",
-    "height": "628",
-    "url": "{{ site.opengraph.url | prepend: site.url }}"
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>{{ site.title | append: ' – ' }}{{ site.tagline }}</title>
+  {% if jekyll.environment == "production" -%}
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/morula.min.css">
+  {% else -%}
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/morula.css">
+  {%- endif -%}
+  <link rel="preload" href="/assets/fonts/subset-LeagueGothicSemiCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- favicons -->
+  <link rel="icon" href="{{ site.url }}/favicon.ico" sizes="any">
+  <link rel="icon" href="{{ site.url }}/assets/img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/assets/img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="{{ site.url }}/site.webmanifest">
+  <!-- SEO -->
+  <link rel="canonical" href="{{ page.url |  replace:'index.html','' | absolute_url }}">
+  <meta name="description" content="{{ site.description }}">
+  <!-- Open graph -->
+  <meta property="og:title" content="{{ site.title | append: ' – ' }}{{ site.tagline }}">
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ site.opengraph.url | prepend: site.url }}">
+  <!-- LinkedIn -->
+  <meta prefix="og: https://ogp.me/ns#" property="og:title" content="{{ site.title }}">
+  <meta prefix="og: https://ogp.me/ns#" property="og:type" content="website">
+  <meta prefix="og: https://ogp.me/ns#" property="og:description" content="{{ site.description }}">
+  <meta prefix="og: https://ogp.me/ns#" property="og:image" content="{{ site.opengraph.url | prepend: site.url }}">
+  <meta prefix="og: https://ogp.me/ns#" property="og:url" content="{{ page.url | prepend: site.url }}">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Milan, Italy",
+      "postalCode": "20132",
+    },
+    "logo": "{{ site.opengraph.url | prepend: site.url }}",
+    "headline": "{{ site.title | append: ' – ' }}{{ site.tagline }}",
+    "email": "hello(at)morula.eu",
+    "url": "{{ site.url }}{{ page.url }}",
+    "description": "{{ site.description }}",
+    "keywords": "{{ site.keywords }}",
+    "datePublished": "{{ page.date }}",
+    "dateModified": "{{ page.last_modified_at }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "width": "1200",
+      "height": "628",
+      "url": "{{ site.opengraph.url | prepend: site.url }}"
+    }
   }
-}
-</script>
+  </script>
 </head>
 <body>
-<main>
-{{ content }}
-</main>
+  <main>
+  {{ content }}
+  </main>
 </body>
 </html>
