@@ -21,11 +21,6 @@ exclude:
   - README.md
 
 # -------------------
-# Inclusions
-# -------------------
-include: ["_pages"]
-
-# -------------------
 # SEO
 # -------------------
 timezone: Europe/Berlin
