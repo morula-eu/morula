@@ -1,0 +1,20 @@
+User-Agent: ChatGPT-User
+Disallow: /
+
+User-Agent: AdsBot-Google
+Disallow: /
+
+User-Agent: Mediapartners-Google
+Disallow: /
+
+User-Agent: adidxbot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: redditbot
+Disallow: /
+
+User-agent: yandex
+Disallow: /
