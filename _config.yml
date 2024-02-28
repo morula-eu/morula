@@ -21,6 +21,11 @@ exclude:
   - README.md
 
 # -------------------
+# Inclusions
+# -------------------
+include: [".well-known"]
+
+# -------------------
 # SEO
 # -------------------
 timezone: Europe/Berlin
