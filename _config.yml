@@ -19,6 +19,8 @@ opengraph:
 # -------------------
 exclude:
   - README.md
+  - Morula.sublime-project
+  - Morula.sublime-workspace
 
 # -------------------
 # Inclusions
