@@ -1,11 +1,9 @@
-host: "localhost"
 url: "https://morula.eu"
-canonical_url: "https://morula.eu"
-lang: "en-US"
+lang: "en-GB"
 title: "Morula"
-description: "A small web design agency focused on sustainability and accessibility. With 20 years of experience, we offer design, development, audio and video services."
-tagline: "Web design agency"
-pitch: Morula is where creativity and technical skills meet. We are professional web designers and developers focused on sustainability and accessibility.<br><br>Morula is <a href="https://silviamaggidesign.com" title="Visit Silvia Maggi Design website">Silvia Maggi</a> and <a href="https://minutestomidnight.co.uk" title="Visit Minutes to Midnight website">Simone Silvestroni</a>. With over 20 years of experience working together, we offer services that span across design, development, audio and video.
+description: "Web design consultants focused on sustainability and accessibility. With 20+ years of experience, we offer design, development, along with sound design services."
+tagline: "Web design consultants"
+pitch: Morula is where creativity and technical skills meet. We are professional web designers and developers focused on sustainability and accessibility.<br><br>Morula is <a href="https://silviamaggidesign.com" title="Visit Silvia Maggi Design website">Silvia Maggi</a> and <a href="https://minutestomidnight.co.uk" title="Visit Minutes to Midnight website">Simone Silvestroni</a>. With over 20 years of experience working together, we offer services that span across design, development, audio.
 logo: 
   url: "/assets/img/morula-logo-2022.svg"
   alt: "Morula rounded avatar containing the vector silhouettes of Silvia Maggi and Simone Silvestroni"
@@ -30,7 +28,7 @@ include: [".well-known"]
 # -------------------
 # SEO
 # -------------------
-timezone: Europe/Berlin
+timezone: Europe/London
 keywords:
   silvia maggi,
   simone silvestroni,
